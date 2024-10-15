@@ -3,9 +3,17 @@ print(21)
 
 # 15-10-2024/ TUESDAY.
 
-# git init
-# git add README.md
-# git commit -m "first commit"
-# git branch -M main
-# git remote add origin https://github.com/mjshubham21/pythonStart.git
-# git push -u origin main
+# Escape sequences "\n" and print statements
+print("Wakanda Forever \nValar Morghulis");
+
+'''
+Multi
+Line 
+Comment
+'''
+
+# \" \" Double quotes escape sequence.
+print("\"Legendary\" Escape Sequence.")
+
+# separator: sep
+print("The", 10000, "Ships of Nymeria", sep= "|");
