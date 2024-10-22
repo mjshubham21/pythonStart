@@ -110,3 +110,92 @@ def get_speed(car_name):
 
 print(get_speed("Rimac Nevera"))  # Output: 258
 print(get_speed("Lamborghini Aventador"))  # Output: Car not found
+
+# Typecasting:
+# Implicit vs. Explicit Typecasting
+# Implicit Typecasting: Automatically done by the interpreter when it can safely convert one type to another. For example, adding an integer to a float will automatically result in a float.
+# Explicit Typecasting: Manually converting one data type to another using functions or methods.
+
+# Convert string to integer
+speed = "250"
+speed_int = int(speed)
+print(speed_int)  # Output: 250
+
+# Convert integer to string
+car_count = 3
+car_count_str = str(car_count)
+print("Number of cars: " + car_count_str)  # Output: Number of cars: 3
+
+# Convert list to tuple
+cars = ["Bugatti", "Pagani", "Koenigsegg"]
+cars_tuple = tuple(cars)
+print(cars_tuple)  # Output: ('Bugatti', 'Pagani', 'Koenigsegg')
+
+# 22-10-2024/ Tuesday:
+# Getting Input in Python
+# In Python, the input() function reads input from the keyboard as a string. If you want to work with other data types (like integers or floats), you'll need to convert the input.
+
+# Getting a string input
+# name = input("Enter your name: ")
+# print(f"Hello, {name}!")
+
+# Getting an integer input
+# age = int(input("Enter your age: "))
+# print(f"You are {age} years old.")
+
+# Asking user for their favorite supercar
+# supercar = input("Enter your favorite supercar: ")
+# speed = int(input("Enter the top speed (in km/h): "))
+
+# print(f"Your favorite supercar is {supercar} with a top speed of {speed} km/h!")
+
+# Handling Errors in Input (Python Example)
+# In Python, you might want to handle invalid inputs (e.g., the user enters a non-numeric value where a number is expected). You can use try-except to handle such cases.
+
+# try:
+    # speed = int(input("Enter the top speed (in km/h): "))
+    # print(f"Your car's speed is {speed} km/h!")
+# except ValueError:
+    # print("Please enter a valid number for the speed.")
+
+st= '''
+Multiline strings are
+enclosed in triple 
+or
+dpuble quotes.
+'''
+# print(st)
+
+# Strings
+
+# Using single or double quotes
+car = 'Bugatti'
+quote = "The Fast and Furious saga is thrilling!"
+
+# String concatenation
+first_part = "Bugatti"
+second_part = " is a hypercar."
+full_sentence = first_part + second_part
+print(full_sentence)  # Output: Bugatti is a hypercar.
+
+# Using f-strings for formatted output
+speed = 490.48
+message = f"The Bugatti Chiron reached {speed} km/h."
+print("String concatination:: ",message)  # Output: The Bugatti Chiron reached 490.48 km/h.
+
+car = "Koenigsegg"
+# Slicing the string (start:end)
+print("car[0:4]:: ",car[0:4])  # Output: Koen
+print("car[4:]:: ",car[4:])   # Output: igsegg (from index 4 to the end)
+
+# Escape Sequences:
+# Char  Means           E.G
+# \'	Single Quote	'It\'s a supercar'
+# \"	Double Quote	"He said, \"Wow!\""
+# \\	Backslash	    'C:\\Program Files\\Bugatti'
+# \n	Newline	        'Bugatti\nVeyron'
+
+# In Python, you can create raw strings by prefixing a string with r. This tells Python to treat backslashes as literal characters, which is useful when working with file paths or regular expressions.
+
+file_path = r"C:\Program Files\Bugatti"
+print(file_path)  # Output: C:\Program Files\Bugatti
